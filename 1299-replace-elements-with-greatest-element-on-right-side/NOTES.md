@@ -1,1 +1,1 @@
-​
+In this problem, to find the max from the right, we will need to loop over the list reversely, if we find out which one is the max, we will replace into arr[i], if we find out the new max, we will use tmp value, update the max. The core idea is to loop reversely. Time complexity: O(n), Space Complexity: O(1).​
