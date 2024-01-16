@@ -18,7 +18,7 @@ class Solution {
         
         // Optimal solution:
         // If no flowers need to be planted, return true
-        int count = 0;
+        // int count = 0;
         for (int i = 0; i < flowerbed.length; i++) {
             // Check if the current plot is empty.
             if (flowerbed[i] == 0) {
@@ -29,14 +29,12 @@ class Solution {
                 // If both plots are empty, we can plant a flower here.
                 if (emptyLeftPlot && emptyRightPlot) {
                     flowerbed[i] = 1;
-                    count++;
-                    if (count >= n) {
-                        return true;
-                    }
+                    // count++;
+                    n--;
                 }
             }
         }
-        return count >= n;
+        return n <= 0;
         
     }
 }
